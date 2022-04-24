@@ -1,0 +1,3 @@
+logo: https://github.com/(OrderedDict([('role_name', 'ansible-role-git'), ('author', 'John Stilia'), ('author_email', 'stilia.johny@gmail.com'), ('github_user', 'stiliajohny'), ('description', 'Install and configure git client as well as clone git repos with ease.'), ('add_travis_config', 'n'), ('add_Gitlab_CI_config', 'n'), ('license', 'GPLv3'), ('minimum_ansible_version', ' 2.9'), ('_template', 'gh:stiliajohny/cookiecutter-collection')]), Undefined)/ansible-role-git/raw/main/.assets/page_logo.png
+show_downloads: true
+theme: jekyll-theme-minimal
