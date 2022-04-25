@@ -5,7 +5,7 @@ galaxy_info:
   role_name: ansible_role_git
   namespace: stiliajohny
   license: GPLv3
-
+  documentation_url: https://github.com/stiliajohny/ansible-role-git/blob/master/README.md
   min_ansible_version: 2.9
 
   platforms:
