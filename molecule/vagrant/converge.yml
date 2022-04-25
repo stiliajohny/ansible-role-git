@@ -1,6 +1,17 @@
 ---
 - name: Converge
   hosts: all
+  vars:
+    users:
+      - name: vagrant
+        fullname: "Vagrant"
+        home: /home/vagrant
+        email: vagrant@molecule.test
+    github_repo_name:
+      - stiliajohny/stiliajohny.github.io
+      - adi1090x/rofi
+      - aquasecurity/trivy
+    destination: "{{ users[0].home }}/"
   tasks:
     - name: "Include role ansible-role-git"
       include_role:

@@ -1,2 +1,20 @@
 ---
-# defaults file for ansible-role-git
+#default git
+
+# users:
+#   - name: nobody
+#     fullname: "Nobody"
+#     home: /home/nobody
+#     email: nobody@gmail.com
+
+# git_ssh_private: "/root/.ssh/id_rsa"
+
+# force_git_clone: true
+
+# destination: "{{ users[0].home }}/Documents/Git"
+
+# github_repo_name:
+#   - stiliajohny/stiliajohny.github.io
+
+# gitlab_repo_name:
+#   - stiliajohny/stiliajohny.github.io

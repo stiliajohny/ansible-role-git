@@ -1,0 +1,12 @@
+---
+- name: Populate pacman keychain
+  shell: "pacman-key --populate"
+  register: pacman_populate
+  become: true
+
+- name: Install git
+  community.general.pacman:
+    name: git
+    state: present
+    update_cache: True
+  become: true
