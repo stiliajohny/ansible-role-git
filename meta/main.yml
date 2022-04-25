@@ -11,9 +11,25 @@ galaxy_info:
   platforms:
     - name: EL
       versions:
-        - 7
+        - all
     - name: Ubuntu
-      versions: 14.04
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+    - name: CentOS
+      versions:
+        - all
+    - name: Fedora
+      versions:
+        - all
+    - name: Amazon Linux
+      versions:
+        - all
+    - name: ArchLinux
+      versions:
+        - all
 
   galaxy_tags:
     - git

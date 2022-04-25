@@ -1,37 +1,49 @@
-ansible-role-git
-=========
+# ansible-role-git
 
 Install and configure git client as well as clone git repos with ease.
 
-Requirements
-------------
+## Requirements
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+N/A
 
-Role Variables
---------------
+## Role Variables
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+```yaml
+users:
+  - name: nobody
+    fullname: "Nobody"
+    home: /home/nobody
+    email: nobody@gmail.com
 
-Dependencies
-------------
+git_ssh_private: "/root/.ssh/id_rsa"
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+force_git_clone: true
 
-Example Playbook
-----------------
+destination: "{{ users[0].home }}/Documents/Git"
 
-    - hosts: servers
-      roles:
-         - { role: ansible-role-git, var_name: 42 }
+github_repo_name:
+  - stiliajohny/stiliajohny.github.io
 
-License
--------
+gitlab_repo_name:
+  - stiliajohny/stiliajohny.github.io
+```
+
+## Dependencies
+
+N/A
+
+## Example Playbook
+
+```yaml
+- hosts: servers
+  roles:
+    - { role: ansible-role-git }
+```
+
+## License
 
 GPLv3
 
-Author Information
-------------------
+## Author Information
 
 John Stilia - stilia.johny@gmail.com
-
